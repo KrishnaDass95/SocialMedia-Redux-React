@@ -6,7 +6,7 @@ const Card = ({post}) => {
     let maxBodyLength = 50;
     
     return (
-        <div className="card">
+        <div className="card" key={post.id}>
           <Link to={`/item/${post.id}`}>
           <img
             src={`https://picsum.photos/200?random=${post.id}`}
