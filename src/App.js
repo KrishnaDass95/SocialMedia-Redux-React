@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Card from "./Components/Card";
 import {Routes, Route} from 'react-router-dom'
 import HomePage from "./pages/Homepage";
+import PostDetails from "./Components/PostDetails";
 
 
 const App = () => {
@@ -33,7 +34,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage data={data}/>}></Route>
-        <Route></Route>
+        <Route path="/item/:id" element={<PostDetails />}></Route>
 
       </Routes>
 

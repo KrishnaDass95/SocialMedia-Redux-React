@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 const Card = ({post}) => {
     let maxTitleLength = 25;
@@ -5,6 +7,7 @@ const Card = ({post}) => {
     
     return (
         <div className="card">
+          <Link to={`/item/${post.id}`}>
           <img
             src={`https://picsum.photos/200?random=${post.id}`}
             alt={post.body}
@@ -20,6 +23,7 @@ const Card = ({post}) => {
           ) : (
             <p>{post.body}</p>
           )}
+          </Link>
         </div>
       );
 }
