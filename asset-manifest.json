@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SocialMedia-Redux-React/static/css/main.10a9f18e.css",
+    "main.js": "/SocialMedia-Redux-React/static/js/main.13ccdfde.js",
+    "index.html": "/SocialMedia-Redux-React/index.html",
+    "main.10a9f18e.css.map": "/SocialMedia-Redux-React/static/css/main.10a9f18e.css.map",
+    "main.13ccdfde.js.map": "/SocialMedia-Redux-React/static/js/main.13ccdfde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10a9f18e.css",
+    "static/js/main.13ccdfde.js"
+  ]
+}
