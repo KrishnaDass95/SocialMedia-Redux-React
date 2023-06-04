@@ -8,6 +8,7 @@ const Card = ({post}) => {
     return (
         <div className="card" key={post.id}>
           <Link to={`/item/${post.id}`}>
+            <div className="content">
           <img
             src={`https://picsum.photos/200?random=${post.id}`}
             alt={post.body}
@@ -23,6 +24,7 @@ const Card = ({post}) => {
           ) : (
             <p>{post.body}</p>
           )}
+          </div>
           </Link>
         </div>
       );

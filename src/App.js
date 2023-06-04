@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <div>Page is loading...</div>;
+    return <h2>Page is loading...</h2>;
   }
 
   if (error) {

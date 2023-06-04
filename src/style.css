@@ -1,4 +1,36 @@
-.card{
-    border: 1px solid black;
-    width: 40%;
+*{
+    background-color: #1E1E1E;
+    color: white;
+    box-sizing: border-box;
 }
+h1{
+    text-align: center;
+}
+
+.post-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+img{
+    border-radius: 12px;
+    object-fit: cover;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 300px;
+    border-radius: 5px
+  }
+  
+  /* Add some padding inside the card container */
+  .content {
+    text-align: center;
+    padding: 20px;
+    max-width: 280px;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
