@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { fetchPosts } from "./redux/actions/imageActions";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "./Components/Card";
+import {Routes, Route} from 'react-router-dom'
+import HomePage from "./pages/Homepage";
+
 
 const App = () => {
   let loading = useSelector((state) => state.loading);
@@ -28,11 +31,13 @@ const App = () => {
         <h1>Social Media App</h1>
       </div>
 
-      <div className="post-grid">
-        {data.map((post) => {
-          return <Card post={post}></Card>
-        })}
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage data={data}/>}></Route>
+        <Route></Route>
+
+      </Routes>
+
+      
     </>
   );
 };
